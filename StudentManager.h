@@ -1,6 +1,5 @@
 #ifndef STUDENTMANAGER_H
 #define STUDENTMANAGER_H
-
 #include <list>
 #include"Student.h"
 using namespace std;
@@ -11,6 +10,7 @@ enum
     json,
     ui
 };
+
 class File_operations;
 class StudentManager
 {
@@ -20,6 +20,7 @@ public:
     StudentManager();
     void initStudent(list<Student> student);
     void selectFile();
+    void display();
     ~StudentManager();
 };
 
